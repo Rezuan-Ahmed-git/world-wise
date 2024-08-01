@@ -57,7 +57,7 @@ function useCities() {
   const context = useContext(CitiesContext);
 
   if (context === undefined)
-    throw new Error('Citites context was used outside the CitiesProvider');
+    throw new Error('Cities context was used outside the CitiesProvider');
 
   return context;
 }

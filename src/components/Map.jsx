@@ -63,7 +63,14 @@ function Map() {
             key={city.id}
           >
             <Popup>
-              <span> {city.emoji} </span> <span> {city.cityName} </span>
+              <span>
+                {' '}
+                <img
+                  src={`https://flagcdn.com/32x24/${city?.emoji.toLowerCase()}.png`}
+                  alt={city.cityName}
+                />{' '}
+              </span>{' '}
+              <span> {city.cityName} </span>
             </Popup>
           </Marker>
         ))}

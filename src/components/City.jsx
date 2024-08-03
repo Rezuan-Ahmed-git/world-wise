@@ -26,6 +26,12 @@ function City() {
 
   const { cityName, emoji, date, notes } = currentCity;
 
+  let makeEmojiLowerCase;
+
+  if (emoji) {
+    makeEmojiLowerCase = emoji.toLowerCase();
+  }
+
   if (isLoading) return <Spinner />;
 
   return (
@@ -35,10 +41,10 @@ function City() {
         <h3>
           <span>
             <img
-              src={`https://flagcdn.com/32x24/${emoji.toLowerCase()}.png`}
+              src={`https://flagcdn.com/32x24/${makeEmojiLowerCase}.png`}
               alt={cityName}
             />
-          </span>{' '}
+          </span>
           {cityName}
         </h3>
       </div>

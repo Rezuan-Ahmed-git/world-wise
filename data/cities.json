@@ -47,42 +47,6 @@
         "lat": "42.45588764197166",
         "lng": "1.9995117187500002"
       }
-    },
-    {
-      "id": "becd",
-      "cityName": "Dhaka",
-      "country": "Bangladesh",
-      "emoji": "BD",
-      "date": "2024-08-03T13:57:43.698Z",
-      "notes": "My own town",
-      "position": {
-        "lat": "23.74009762440226",
-        "lng": "90.49438476562501"
-      }
-    },
-    {
-      "id": "a041",
-      "cityName": "Bakarganj",
-      "country": "Bangladesh",
-      "emoji": "BD",
-      "date": "2024-08-03T14:01:30.735Z",
-      "notes": "",
-      "position": {
-        "lat": "22.517631421923777",
-        "lng": "90.41198730468751"
-      }
-    },
-    {
-      "id": "a806",
-      "cityName": "Saint-Dizier-Masbaraud",
-      "country": "France",
-      "emoji": "FR",
-      "date": "2024-08-03T14:05:25.680Z",
-      "notes": "adf",
-      "position": {
-        "lat": "45.98169518512228",
-        "lng": "1.6918945312500002"
-      }
     }
   ]
 }

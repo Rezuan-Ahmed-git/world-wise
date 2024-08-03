@@ -12,6 +12,8 @@ const formatDate = (date) =>
 function CityItem({ city }) {
   const { currentCity } = useCities();
   const { cityName, emoji, date, id, position } = city;
+
+  console.log(emoji.toLowerCase());
   return (
     <li>
       <Link
@@ -20,7 +22,12 @@ function CityItem({ city }) {
         }`}
         to={`${id}?lat=${position.lat}&lng=${position.lng}`}
       >
-        <span className={styles.emoji}>{emoji}</span>
+        <img
+          className={styles.emoji}
+          src={`https://flagcdn.com/32x24/${emoji.toLowerCase()}.png`}
+          alt={cityName}
+        />
+
         <h3 className={styles.name}>{cityName}</h3>
         <time className={styles.date}> {formatDate(date)} </time>
         <button className={styles.deleteBtn}>&times;</button>

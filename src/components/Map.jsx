@@ -8,6 +8,7 @@ import {
   useMap,
   useMapEvent,
 } from 'react-leaflet';
+// import { OpenStreetMapProvider, GeoSearchControl } from 'leaflet-geosearch';
 import { useEffect, useState } from 'react';
 import { useCities } from '../contexts/CitiesContext';
 import { useGeolocation } from '../hooks/useGeolocation';
@@ -76,6 +77,7 @@ function Map() {
         ))}
         <ChangeCenter position={mapPosition} />
         <DetectClick />
+        {/* <SearchLocation provider={new OpenStreetMapProvider()} /> */}
       </MapContainer>
     </div>
   );
@@ -94,4 +96,24 @@ function DetectClick() {
   });
 }
 
+//search bar
+// const SearchLocation = (props) => {
+//   // Get access to leaflet map
+//   const { provider } = props;
+
+//   // Get search control
+//   const searchControl = new GeoSearchControl({
+//     provider: provider,
+//   });
+
+//   //   Access Leaflet Map
+//   const map = useMap(props);
+//   useEffect(() => {
+//     // Add searchControl to Leaflet map
+//     map.addControl(searchControl);
+//     return () => map.removeControl(searchControl);
+//   });
+
+//   return null; // Do not render any thing
+// };
 export default Map;

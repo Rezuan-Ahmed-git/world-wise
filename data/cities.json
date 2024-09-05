@@ -59,6 +59,18 @@
         "lat": "42.407234661551875",
         "lng": "1.5820312500000002"
       }
+    },
+    {
+      "id": "cea7",
+      "cityName": "Neuvy-Saint-Sepulchre",
+      "country": "France",
+      "emoji": "FR",
+      "date": "2024-08-25T03:59:43.959Z",
+      "notes": "Test",
+      "position": {
+        "lat": "46.5739667965278",
+        "lng": "1.8347167968750002"
+      }
     }
   ]
 }
